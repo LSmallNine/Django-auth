@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>修改密码页面</h3>
+<form action=""method="post">
+    {% csrf_token %}
+    原密码 <input type="text" name="old_pwd">
+    <hr>
+    新密码 <input type="text" name="new_pwd">
+    <hr>
+    确认密码 <input type="text" name="repeat_pwd">
+    <hr>
+    <span>{{ content.stat }}</span>
+    <input type="submit">
+</form>
+</body>
+</html>
